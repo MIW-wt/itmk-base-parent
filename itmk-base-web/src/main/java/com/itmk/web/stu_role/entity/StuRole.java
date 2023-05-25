@@ -1,0 +1,20 @@
+package com.itmk.web.stu_role.entity;
+
+import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableId;
+import com.baomidou.mybatisplus.annotation.TableName;
+import lombok.Data;
+
+/**
+ * @author MJW
+ * @time 2023/05
+ * @PROJECT_NAME itmk-base-parent
+ */
+@Data
+@TableName("stu_role")
+public class StuRole {
+    @TableId(type = IdType.AUTO)
+    private Long stuRoleId;
+    private Long stuId;
+    private Long roleId;
+}
